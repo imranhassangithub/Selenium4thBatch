@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="1" total="2" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Test Newtours Site" duration-ms="16427" started-at="2017-07-22T05:54:50Z" finished-at="2017-07-22T05:55:06Z">
+  <suite name="Test Newtours Site" duration-ms="25619" started-at="2017-08-05T06:59:32Z" finished-at="2017-08-05T06:59:58Z">
     <groups>
     </groups>
-    <test name="Complete NewTours Site Test" duration-ms="16427" started-at="2017-07-22T05:54:50Z" finished-at="2017-07-22T05:55:06Z">
+    <test name="Complete NewTours Site Test" duration-ms="25619" started-at="2017-08-05T06:59:32Z" finished-at="2017-08-05T06:59:58Z">
       <class name="com.bitm.selenium4thbatch.Test.LoginTest">
-        <test-method status="FAIL" signature="checkHomePageTitle()[pri:0, instance:com.bitm.selenium4thbatch.Test.LoginTest@68be2bc2]" name="checkHomePageTitle" duration-ms="14307" started-at="2017-07-22T11:54:50Z" finished-at="2017-07-22T11:55:04Z">
+        <test-method status="FAIL" signature="checkHomePageTitle()[pri:0, instance:com.bitm.selenium4thbatch.Test.LoginTest@29ee9faa]" name="checkHomePageTitle" duration-ms="22368" started-at="2017-08-05T12:59:32Z" finished-at="2017-08-05T12:59:54Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [Welcome: Mercury Toursblabla] but found [Welcome: Mercury Tours]]]>
@@ -19,7 +19,7 @@
 	at org.testng.Assert.assertEquals(Assert.java:123)
 	at org.testng.Assert.assertEquals(Assert.java:176)
 	at org.testng.Assert.assertEquals(Assert.java:186)
-	at com.bitm.selenium4thbatch.Test.LoginTest.checkHomePageTitle(LoginTest.java:21)
+	at com.bitm.selenium4thbatch.Test.LoginTest.checkHomePageTitle(LoginTest.java:24)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -50,7 +50,14 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkHomePageTitle -->
-        <test-method status="PASS" signature="loginTest()[pri:0, instance:com.bitm.selenium4thbatch.Test.LoginTest@68be2bc2]" name="loginTest" duration-ms="2085" started-at="2017-07-22T11:55:04Z" finished-at="2017-07-22T11:55:06Z">
+        <test-method status="PASS" signature="loginTest(java.util.List)[pri:0, instance:com.bitm.selenium4thbatch.Test.LoginTest@29ee9faa]" name="loginTest" duration-ms="1591" started-at="2017-08-05T12:59:56Z" data-provider="logindataprovider" finished-at="2017-08-05T12:59:58Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[LoginDto [username=demo, password=demo]]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
