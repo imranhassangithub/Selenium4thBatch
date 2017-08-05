@@ -23,28 +23,26 @@ public class LoginTest {
 		driver.get(UrlTextUtils.BASE_URL);
 		Assert.assertEquals(driver.getTitle(), UrlTextUtils.LOGIN_PAGE_TITLE);
 
-		//Assert.assertEquals(driver.getTitle(), UrlTextUtils.LOGIN_PAGE_TITLE);
 		System.out.println("Home Page Title Verified !!!");
 	}
-	
-	@Test(priority = 2,dataProvider="logindataprovider",dataProviderClass=LoginDataProvider.class)
-	public void loginTest(List<LoginDto>logins) throws InterruptedException{
-		//driver= ExecuteDriver.driver;
-		
-		for(LoginDto loginexcel:logins){
-			
-		//driver.get(UrlTextUtils.BASE_URL);
-		driver.findElement(By.xpath(XpathUtils.Login.Login_USER_NAME)).sendKeys(loginexcel.getUsername());
-		driver.findElement(By.xpath(XpathUtils.Login.login_PASSWORD)).sendKeys(loginexcel.getPassword());
-		driver.findElement(By.xpath(XpathUtils.Login.BTN_SIGNIN)).submit();
-		System.out.println("Logged In Successfully !!");
-		}
-		}
 
-	/*private void navigate(String url) {
-		// TODO Auto-generated method stub
-		driver.navigate().to(url);
-		driver.navigate().refresh();
-	}*/
+	@Test(priority = 2, dataProvider = "logindataprovider", dataProviderClass = LoginDataProvider.class)
+	public void loginTest(List<LoginDto> logins) throws InterruptedException {
+		// driver= ExecuteDriver.driver;
+
+		for (LoginDto loginexcel : logins) {
+
+			// driver.get(UrlTextUtils.BASE_URL);
+			driver.findElement(By.xpath(XpathUtils.Login.Login_USER_NAME)).sendKeys(loginexcel.getUsername());
+			driver.findElement(By.xpath(XpathUtils.Login.login_PASSWORD)).sendKeys(loginexcel.getPassword());
+			driver.findElement(By.xpath(XpathUtils.Login.BTN_SIGNIN)).submit();
+			System.out.println("Logged In Successfully !!");
+		}
+	}
+
+	/*
+	 * private void navigate(String url) { // TODO Auto-generated method stub
+	 * driver.navigate().to(url); driver.navigate().refresh(); }
+	 */
 
 }

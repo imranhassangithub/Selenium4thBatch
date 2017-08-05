@@ -23,7 +23,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -37,7 +37,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Test_Newtours_Site">
-              <span class="suite-name border-failed">Test Newtours Site</span>
+              <span class="suite-name border-passed">Test Newtours Site</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -90,21 +90,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods, 1 failed,   1 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Test_Newtours_Site" class="hide-methods failed suite-Test_Newtours_Site"> (hide)</a> <!-- hide-methods failed suite-Test_Newtours_Site -->
-                      <a href="#" panel-name="suite-Test_Newtours_Site" class="show-methods failed suite-Test_Newtours_Site"> (show)</a> <!-- show-methods failed suite-Test_Newtours_Site -->
-                    </span>
-                    <div class="method-list-content failed suite-Test_Newtours_Site">
-                      <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Test_Newtours_Site" title="com.bitm.selenium4thbatch.Test.LoginTest" hash-for-method="checkHomePageTitle">checkHomePageTitle</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Test_Newtours_Site -->
+                    <span class="method-stats">2 methods,   2 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -113,6 +99,11 @@
                       <a href="#" panel-name="suite-Test_Newtours_Site" class="show-methods passed suite-Test_Newtours_Site"> (show)</a> <!-- show-methods passed suite-Test_Newtours_Site -->
                     </span>
                     <div class="method-list-content passed suite-Test_Newtours_Site">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_Newtours_Site" title="com.bitm.selenium4thbatch.Test.LoginTest" hash-for-method="checkHomePageTitle">checkHomePageTitle</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Test_Newtours_Site" title="com.bitm.selenium4thbatch.Test.LoginTest" hash-for-method="loginTest([LoginDto [username=demo, password=demo]])">loginTest([LoginDto [username=demo, password=demo]])</a> <!-- method navigator-link -->
@@ -130,9 +121,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Test_Newtours_Site" class="panel Test_Newtours_Site">
-          <div class="suite-Test_Newtours_Site-class-failed">
+          <div class="suite-Test_Newtours_Site-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
+              <img src="passed.png"/>
               <span class="class-name">com.bitm.selenium4thbatch.Test.LoginTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -141,51 +132,8 @@
                   <a name="checkHomePageTitle">
                   </a> <!-- checkHomePageTitle -->
                   <span class="method-name">checkHomePageTitle</span>
-                  <div class="stack-trace"><b>"java.lang.AssertionError: expected [Welcome: Mercury Toursblabla] but found [Welcome: Mercury Tours]
-	at com.bitm.selenium4thbatch.Test.LoginTest.checkHomePageTitle(LoginTest.java:24)
-... Removed 29 stack frames<br/> java.lang.AssertionError: expected [Welcome: Mercury Toursblabla] but found [Welcome: Mercury Tours]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:494)
-	at org.testng.Assert.assertEquals(Assert.java:123)
-	at org.testng.Assert.assertEquals(Assert.java:176)
-	at org.testng.Assert.assertEquals(Assert.java:186)
-	at com.bitm.selenium4thbatch.Test.LoginTest.checkHomePageTitle(LoginTest.java:24)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
-"</b><br>org.testng.Assert.fail(Assert.java:94)<br>org.testng.Assert.failNotEquals(Assert.java:494)<br>org.testng.Assert.assertEquals(Assert.java:123)<br>org.testng.Assert.assertEquals(Assert.java:176)<br>org.testng.Assert.assertEquals(Assert.java:186)<br>com.bitm.selenium4thbatch.Test.LoginTest.checkHomePageTitle(LoginTest.java:24)<br>sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br>sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)<br>sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)<br>java.lang.reflect.Method.invoke(Unknown Source)<br>org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br>org.testng.internal.Invoker.invokeMethod(Invoker.java:714)<br>org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br>org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br>org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br>org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br>org.testng.TestRunner.privateRun(TestRunner.java:767)<br>org.testng.TestRunner.run(TestRunner.java:617)<br>org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br>org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br>org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br>org.testng.SuiteRunner.run(SuiteRunner.java:240)<br>org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br>org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br>org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)<br>org.testng.TestNG.runSuitesLocally(TestNG.java:1123)<br>org.testng.TestNG.run(TestNG.java:1031)<br>org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)<br>org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)<br>org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)<br>
-</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Test_Newtours_Site-class-failed -->
-          <div class="suite-Test_Newtours_Site-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.bitm.selenium4thbatch.Test.LoginTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
                   <a name="loginTest([LoginDto [username=demo, password=demo]])">
@@ -252,16 +200,16 @@ data.addRows(2);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'checkHomePageTitle')
 data.setCell(0, 2, 'com.bitm.selenium4thbatch.Test.LoginTest')
-data.setCell(0, 3, 22368);
+data.setCell(0, 3, 10659);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'loginTest')
 data.setCell(1, 2, 'com.bitm.selenium4thbatch.Test.LoginTest')
-data.setCell(1, 3, 1591);
+data.setCell(1, 3, 874);
 window.suiteTableData['Test_Newtours_Site']= { tableData: data, tableDiv: 'times-div-Test_Newtours_Site'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 23 seconds</span>
+              <span class="suite-total-time">Total running time: 11 seconds</span>
               <div id="times-div-Test_Newtours_Site">
               </div> <!-- times-div-Test_Newtours_Site -->
             </div> <!-- times-div -->
@@ -289,14 +237,12 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">com.bitm.selenium4thbatch.Test.LoginTest</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">checkHomePageTitle</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">loginTest([LoginDto [username=demo, password=demo]])</span>
-                <span class="method-start">24007 ms</span>
+                <span class="method-start">11305 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
